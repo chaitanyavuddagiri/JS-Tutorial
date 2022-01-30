@@ -39,3 +39,48 @@ const person1 = {
 Object.freeze(person1);
 person1.name = "something else";
 console.log(person1);
+
+// in operator
+// to check if a value is present in an object we use the in operator
+// find the below code
+let user = {
+	name: "John",
+	age: 30,
+};
+console.log("name" in user);
+
+// hasOwnProperty()
+// to check if a value is present in an object we use the hasOwnProperty() method
+// find the below code
+let user1 = {
+	name: "John",
+	age: 30,
+};
+console.log(user1.hasOwnProperty("name"));
+
+// Object.keys()
+// to get all the keys of an object we use the Object.keys() method and pass in the object we want to get the keys of
+// find the below code
+let user2 = {
+	name: "John",
+	age: 30,
+};
+console.log(Object.keys(user2));
+
+// Object.values()
+// to get all the values of an object we use the Object.values() method and pass in the object we want to get the values of
+// find the below code
+let user3 = {
+	name: "John",
+	age: 30,
+};
+console.log(Object.values(user3));
+
+// Object.entries()
+// to get all the key value pairs of an object we use the Object.entries() method and pass in the object we want to get the key value pairs of
+// find the below code
+let user4 = {
+	name: "John",
+	age: 30,
+};
+console.log(Object.entries(user4));
