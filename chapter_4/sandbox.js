@@ -34,7 +34,7 @@ const myfnuc = (callbackFnuc) => {
 
 myfnuc((value) => console.log(value));
 
-let brothers = ['krishna', 'harsha', 'bharth', 'vamsi'];
+let brothers = ['krishna', 'harsha', 'bharat', 'vamsi'];
 
 const logPerson = (person, index) => console.log(`${index + 1}. ${person}`);
 
