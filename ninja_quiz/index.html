@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="bootstrap.min.css" />
+		<title>Ninja Quiz</title>
+		<style>
+			.intro,
+			.result {
+				/* background: pink; */
+				background: linear-gradient(90deg, skyblue 0, pink 58%);
+				-webkit-backdrop-filter: blur(10px);
+				backdrop-filter: blur(10px);
+			}
+			.result {
+				/* background: pink; */
+				background: linear-gradient(90deg, green 0, pink 58%);
+				-webkit-backdrop-filter: blur(10px);
+				backdrop-filter: blur(10px);
+			}
+		</style>
+	</head>
+	<body>
+		<!-- Top section -->
+		<div class="intro py-3 text-center bg-white">
+			<div class="container">
+				<h2 class="text-primary dispaly-3 my-4 fw-normal display-3">
+					Ninja Quiz
+				</h2>
+			</div>
+		</div>
+
+		<!-- results section -->
+		<div class="result py-4 d-none bg-light text-center">
+			<div class="container lead">
+				<p>
+					You are
+					<span class="text-primary display-4 p3">0%</span> ninja
+				</p>
+			</div>
+		</div>
+
+		<!-- quiz section -->
+		<div class="quiz py-3">
+			<div class="container">
+				<h2 class="my-3 text-white fw-semibold">
+					On with the questions...
+				</h2>
+				<form class="quiz-form text-light">
+					<div class="my-3">
+						<p class="lead font-weight-normal">
+							1. How do you give a ninja directions?
+						</p>
+						<div class="form-check my-2 text-white-50">
+							<input type="radio" name="q1" value="A" checked />
+							<label class="from-check-label"
+								>Show them a map</label
+							>
+						</div>
+						<div class="form-check my-2 text-white-50">
+							<input type="radio" name="q1" value="B" />
+							<label class="from-check-label"
+								>Don't worry, a ninja will find you</label
+							>
+						</div>
+					</div>
+					<div class="my-3">
+						<p class="lead font-weight-normal">
+							2. If a ninja has 3 apples, then he gives one to
+							Mario 7 one to Yoshi, how many apples does the ninja
+							have left?
+						</p>
+						<div class="form-check my-2 text-white-50">
+							<input type="radio" name="q2" value="A" checked />
+							<label class="from-check-label">1 apple</label>
+						</div>
+						<div class="form-check my-2 text-white-50">
+							<input type="radio" name="q2" value="B" />
+							<label class="from-check-label"
+								>3 apples and 2 corpses</label
+							>
+						</div>
+					</div>
+					<div class="my-3">
+						<p class="lead font-weight-normal">
+							3. How do you know when you met a ninja?
+						</p>
+						<div class="form-check my-2 text-white-50">
+							<input type="radio" name="q3" value="A" checked />
+							<label class="from-check-label"
+								>You'll recognize the outfit</label
+							>
+						</div>
+						<div class="form-check my-2 text-white-50">
+							<input type="radio" name="q3" value="B" />
+							<label class="from-check-label"
+								>The grim reapper will tell you</label
+							>
+						</div>
+					</div>
+					<div class="my-3">
+						<p class="lead font-weight-normal">
+							4. what is the ninjas favorite array method?
+						</p>
+						<div class="form-check my-2 text-white-50">
+							<input type="radio" name="q4" value="A" checked />
+							<label class="from-check-label">For Each</label>
+						</div>
+						<div class="form-check my-2 text-white-50">
+							<input type="radio" name="q4" value="B" />
+							<label class="from-check-label">Slice</label>
+						</div>
+					</div>
+
+					<div class="text-center">
+						<input type="submit" class="btn btn-primary" />
+					</div>
+				</form>
+			</div>
+		</div>
+		<script src="app.js"></script>
+	</body>
+</html>
